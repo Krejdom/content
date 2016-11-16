@@ -8,14 +8,47 @@ order: 4
 
 [Flask](http://flask.pocoo.org/) is a micro web framework for Python, based on the Werkzeug toolkit and Jinja2 template engine.
 
-## Installation
-Let's install Flask. At first open the _Terminal_ (press `Alt` + `F1`, type _Terminal_ and click on the black squere icon or just press `Enter`). Second, type this command:
+## Installation of Flask in the virtualenv
+
+It’s recommended to keep your project inside virtual environment. Let's install and create a new virtual environment for your project.
+
+At first open the _Terminal_ (press `Alt` + `F1`, type _Terminal_ and click on the black squere icon or just press `Enter`). Second, create a new folder `my_project` open it.
 
 ```bash
-$ sudo dnf install python3-flask
+$ mkdir my_project
+$ cd my_project
 ```
 
-That is all, you have sucessfully installed Flask!
+Let's install `python3-virtualenv` package which will allow us to create a virtual environment.
+
+```bash
+$ sudo dnf install python3-virtualenv
+```
+
+Now you can create a virtual environment called `project_venv` which will contain the Python 3.5 and a copy of the pip library which you can use to install Flask.
+
+```bash
+$ virtualenv -p /usr/bin/python3.5 project_venv
+```
+
+If you want to work in the virtual environment, you have to activate it.
+
+```bash
+$ source project_venv/bin/activate
+```
+
+Running the virtual environment, you can install Flask.
+
+```bash
+(project_venv) $ pip install flask
+```
+That is all, you have sucessfully installed Flask in the virtual environment! Now you can start working on your project.
+
+When you finish your work, just deactivate the virtual environment.
+
+```bash
+(project_venv) $ deactivate
+```
 
 ## First application
 
@@ -47,3 +80,5 @@ You should see that it is running on some address, in this case 127.0.0.1. Defau
 ### What next?
 
  * [Flask Documentation](http://flask.pocoo.org/docs/)
+ * [The Hitchhiker's Guide to Python: Virtual Environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
+
