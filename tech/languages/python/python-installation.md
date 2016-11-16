@@ -38,27 +38,43 @@ To run a program written in Python type `python3`, the path and the name of the 
 $ python3 example.py
 ```
 
-## bpython interpreter
-bpython is a fancy interface to the Python interpreter available in Fedora. It highliths the syntax and autocompletes your code.
+## Using virtualenv
+When you work at some project it is good to keep it inside a virtual environment. It will keep the dependencies you need at one place and you no dot have to worry about different projects which needs different version of the same module.
 
-### Installation
-
-Open the _Terminal_ (see above) and isntall _bpython_ for Python 3:
+Let's install `python3-virtualenv` package which will allow us to create a virtual environment.
 
 ```bash
-$ sudo dnf install python3-bpython
+$ sudo dnf install python3-virtualenv
 ```
 
-Now you can run _bpython_. For Python 3 version type `python3-bpython`. You should see something similar:
+Now you can create a virtual environment called `project_venv` which will contain the Python 3.5 and a copy of the pip library which you can use to install project's dependencies.
 
-```python
-bpython version 0.15 on top of Python 3.5.1 /usr/bin/python3
->>> 
+```bash
+$ virtualenv -p /usr/bin/python3.5 project_venv
 ```
-Now you can start coding!
+
+If you want to work in the virtual environment, you have to activate it.
+
+```bash
+$ source project_venv/bin/activate
+```
+
+When the virtual environment is activated (you can see it's name in brackets at the beginning of your prompt), you can install modules via `pip install`.
+
+```bash
+(project_venv) $ pip install name_of_module
+```
+That is all, you have sucessfully created your own virtual environment. Now you can run Python (see above) and start working on your project. 
+
+When you finish your work, just deactivate the virtual environment.
+
+```bash
+(project_venv) $ deactivate
+```
 
 ### What next?
 
  * [Python homepage](https://www.python.org/)
  * [Python 3 Documentation](https://docs.python.org/3/)
- * [bpython website](http://www.bpython-interpreter.org/)
+ * [The Hitchhiker's Guide to Python: Virtual Environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
+
