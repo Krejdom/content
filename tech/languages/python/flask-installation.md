@@ -19,16 +19,10 @@ $ mkdir my_project
 $ cd my_project
 ```
 
-Let's install `python3-virtualenv` package which will allow us to create a virtual environment.
+Now you can create a virtual environment called `project_venv` which will contain Python and a copy of the pip library which you can use to install Flask.
 
 ```bash
-$ sudo dnf install python3-virtualenv
-```
-
-Now you can create a virtual environment called `project_venv` which will contain the Python 3.5 and a copy of the pip library which you can use to install Flask.
-
-```bash
-$ virtualenv -p /usr/bin/python3.5 project_venv
+$ pyvenv project_venv
 ```
 
 If you want to work in the virtual environment, you have to activate it.
@@ -80,5 +74,4 @@ You should see that it is running on some address, in this case 127.0.0.1. Defau
 ### What next?
 
  * [Flask Documentation](http://flask.pocoo.org/docs/)
- * [The Hitchhiker's Guide to Python: Virtual Environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
-
+ * [Python Documentation: venv](https://docs.python.org/3/library/venv.html#module-venv)

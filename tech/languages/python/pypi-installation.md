@@ -20,16 +20,10 @@ And there you go!
 
 The best practise is using pip in the virtual environment. It will keep all modules for one project at one place and it will not break your local system. Another advantage is that you can have more versions of the same module in different virtual environments.
 
-Let's install `python3-virtualenv` package which will allow us to create a virtual environment.
+Let's create a virtual environment called `project_venv` which will contain Python and a copy of the pip library.
 
 ```bash
-$ sudo dnf install python3-virtualenv
-```
-
-Now you can create a virtual environment called `project_venv` which will contain the Python 3.5 and a copy of the pip library.
-
-```bash
-$ virtualenv -p /usr/bin/python3.5 project_venv
+$ pyvenv project_venv
 ```
 
 If you want to work in the virtual environment, you have to activate it.
@@ -53,5 +47,4 @@ When you finish your work, just deactivate the virtual environment.
 ### What next?
 
  * [PyPI - the Python Package Index](https://pypi.python.org/)
- * [The Hitchhiker's Guide to Python: Virtual Environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
-
+ * [Python Documentation: venv](https://docs.python.org/3/library/venv.html#module-venv)
