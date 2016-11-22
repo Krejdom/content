@@ -62,10 +62,10 @@ if __name__ == "__main__":
 
 ### Running
 
-Assuming that you have some Flask application called `foo.py`, you can run it like this.
+Assuming that you have some Flask application called `foo.py`, you can run it in your activated virtual environment (see above) like this.
 
 ```bash
-$ python3 foo.py
+(project_venv) $ python3 foo.py
  * Running on http://127.0.0.1:5000/
 ```
 
