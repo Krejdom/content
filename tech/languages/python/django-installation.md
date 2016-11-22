@@ -48,17 +48,17 @@ This is a short tutorial, how to create your first Django project. You can find 
 
 Now it is a good time to activate your virtual environment (see above). Let's initialize your project files structure. Replace `mysite` with the name of your project.
 ```bash
-$ django-admin startproject mysite
+(project_venv) $ django-admin startproject mysite
 ```
 
 Enter your new directory which was automatically created.
 ```bash
-$ cd mysite
+(project_venv) $ cd mysite
 ```
 
 And run the server.
 ```bash
-$ python3 manage.py runserver
+(project_venv) $ python3 manage.py runserver
 ```
 
 Now that the server’s running, visit http://127.0.0.1:8000/ with your Web browser. You willl see a “Welcome to Django” page, in pleasant, light-blue pastel. It worked!
