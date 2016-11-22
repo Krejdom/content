@@ -20,7 +20,7 @@ And there you go!
 
 The best practise is using pip in the virtual environment. It will keep all modules for one project at one place and it will not break your local system. Another advantage is that you can have more versions of the same module in different virtual environments.
 
-Let's create a virtual environment called `project_venv` which will contain the main Python 3 version in Fedora and a copy of the pip3 library. If you need to use another version of Python or the different interpreter, see [Multiple Interpreters section](https://developer.fedoraproject.org/tech/languages/python/multiple-pythons.html).
+Let's create a virtual environment called `project_venv` which will contain the main Python 3 version in Fedora and pip. If you need to use another version of Python or different interpreter such as PyPy, see [Multiple Interpreters section](https://developer.fedoraproject.org/tech/languages/python/multiple-pythons.html).
 
 ```bash
 $ pyvenv project_venv
@@ -35,7 +35,7 @@ $ source project_venv/bin/activate
 When the virtual environment is activated (you can see it's name in brackets at the beginning of your prompt), you can install modules with pip.
 
 ```bash
-(project_venv) $ pip3 install module_name
+(project_venv) $ pip install module_name
 ```
 
 When you finish your work, just deactivate the virtual environment.

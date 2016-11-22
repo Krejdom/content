@@ -17,7 +17,7 @@ $ mkdir my_project
 $ cd my_project
 ```
 
-Now you can create a virtual environment called `project_venv` which will contain Python and a copy of the pip library which you can use to install Django.
+Let's create a virtual environment called `project_venv` which will contain Python and pip which you can use to install Django.
 
 ```bash
 $ pyvenv project_venv
@@ -36,32 +36,36 @@ Running the virtual environment, you can install Django.
 ```
 That is all, you have sucessfully installed Django in the virtual environment! Now you can start working on your project.
 
-When you finish your work, just deactivate the virtual environment.
-
-```bash
-(project_venv) $ deactivate
-```
-
 ## First project
 
 This is a short tutorial, how to create your first Django project. You can find a detailed tutorial in [Django Documentation](https://docs.djangoproject.com/en/1.10/intro/tutorial01/).
 
 Now it is a good time to activate your virtual environment (see above). Let's initialize your project files structure. Replace `mysite` with the name of your project.
+
 ```bash
 (project_venv) $ django-admin startproject mysite
 ```
 
 Enter your new directory which was automatically created.
+
 ```bash
 (project_venv) $ cd mysite
 ```
 
 And run the server.
+
 ```bash
 (project_venv) $ python3 manage.py runserver
 ```
 
-Now that the server’s running, visit http://127.0.0.1:8000/ with your Web browser. You willl see a “Welcome to Django” page, in pleasant, light-blue pastel. It worked!
+Now that the server’s running, visit http://127.0.0.1:8000/ with your Web browser. You will see a “Welcome to Django” page, in pleasant, light-blue pastel. It worked!
+
+
+When you finish your work, just deactivate the virtual environment.
+
+```bash
+(project_venv) $ deactivate
+```
 
 ### What next?
 

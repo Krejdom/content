@@ -19,7 +19,7 @@ $ mkdir my_project
 $ cd my_project
 ```
 
-Now you can create a virtual environment called `project_venv` which will contain Python and a copy of the pip library which you can use to install Flask.
+Let's create a virtual environment called `project_venv` which will contain Python and pip which you can use to install Flask.
 
 ```bash
 $ pyvenv project_venv
@@ -37,12 +37,6 @@ Running the virtual environment, you can install Flask.
 (project_venv) $ pip install flask
 ```
 That is all, you have sucessfully installed Flask in the virtual environment! Now you can start working on your project.
-
-When you finish your work, just deactivate the virtual environment.
-
-```bash
-(project_venv) $ deactivate
-```
 
 ## First application
 
@@ -70,6 +64,12 @@ Assuming that you have some Flask application called `foo.py`, you can run it in
 ```
 
 You should see that it is running on some address, in this case 127.0.0.1. Default port for Flask applications is 5000. Open it in web browser to see your application.
+
+When you finish your work, just deactivate the virtual environment.
+
+```bash
+(project_venv) $ deactivate
+```
 
 ### What next?
 

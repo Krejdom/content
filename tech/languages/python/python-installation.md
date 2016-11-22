@@ -41,7 +41,7 @@ $ python3 example.py
 ## Using virtualenv
 When you work at some project it is good to keep it inside a virtual environment. It will keep the dependencies you need at one place and you no dot have to worry about different projects which needs different version of the same module.
 
-Let's create a virtual environment called `project_venv` which will contain Python and a copy of the pip library which you can use to install project's dependencies.
+Let's create a virtual environment called `project_venv` which will contain Python and pip which you can use to install project's dependencies.
 
 ```bash
 $ pyvenv project_venv
